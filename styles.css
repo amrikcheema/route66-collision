@@ -197,3 +197,23 @@ footer .social a {
 main {
     margin-top: 80px; /* Offset for fixed header */
 }
+.testimonial {
+    display: none;
+}
+
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-slider .testimonial {
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.testimonial-slider .testimonial.active {
+    opacity: 1;
+    display: block;
+}
