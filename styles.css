@@ -233,7 +233,7 @@ main {
     }
 
     nav ul.show {
-        display: flex;
+        display: block;
     }
 
     nav ul li {
