@@ -210,38 +210,55 @@ main {
     }
 }
 /* Hamburger Menu */
-/* Hamburger Menu */
-.hamburger {
+/* Hamburger menu icon */
+.menu-icon {
     display: none;
-    flex-direction: column;
+    font-size: 30px;
     cursor: pointer;
+    color: #fff;
+    float: right;
+    padding: 10px;
 }
 
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-    transition: 0.4s;
+/* Menu styling */
+.menu {
+    display: flex;
+    flex-direction: row;
 }
 
+.menu nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Hide menu for mobile view */
 @media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav ul.show {
+    .menu-icon {
         display: block;
     }
 
-    nav ul li {
-        margin: 0;
-        text-align: center;
+    .menu {
+        display: none;
+        flex-direction: column;
     }
 
-    .hamburger {
-        display: flex;
+    .menu nav ul {
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .menu nav ul li {
+        margin: 0;
+    }
+
+    .menu nav ul li a {
+        padding: 10px;
+        color: #fff;
+        display: block;
     }
 }
