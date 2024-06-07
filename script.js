@@ -7,9 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
         currentIndex = (currentIndex + 1) % testimonials.length;
         testimonials[currentIndex].style.transform = 'translateX(0)';
     }
+    
     function toggleMenu() {
-    const nav = document.querySelector('nav ul');
-    nav.classList.toggle('show');
+        const nav = document.querySelector('nav ul');
+        nav.classList.toggle('show');
     }
+
     setInterval(showNextTestimonial, 5000);
 });
