@@ -9,9 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function toggleMenu() {
-        const nav = document.querySelector('nav ul');
-        nav.classList.toggle('show');
+    const menu = document.querySelector('.menu');
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
     }
+}
 
     setInterval(showNextTestimonial, 5000);
 
