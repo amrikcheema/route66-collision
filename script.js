@@ -9,17 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    if (menu.style.display === 'flex') {
-        menu.style.display = 'none';
-    } else {
-        menu.style.display = 'flex';
+        const menu = document.querySelector('.menu');
+        if (menu.style.display === 'flex') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'flex';
+        }
     }
-}
 
     setInterval(showNextTestimonial, 5000);
 
     // Attach the toggleMenu function to the hamburger menu
-    const hamburger = document.querySelector('.hamburger');
+    const hamburger = document.querySelector('.menu-icon');
     hamburger.addEventListener('click', toggleMenu);
 });
