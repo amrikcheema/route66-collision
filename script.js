@@ -21,5 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Attach the toggleMenu function to the hamburger menu
     const hamburger = document.querySelector('.menu-icon');
-    hamburger.addEventListener('click', toggleMenu);
+    if (hamburger) {
+        hamburger.addEventListener('click', toggleMenu);
+    }
 });
