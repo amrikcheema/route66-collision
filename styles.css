@@ -262,3 +262,16 @@ main {
         display: block;
     }
 }
+
+.hero-text {
+    color: #ff6600; /* Orange color */
+    font-size: 3em; /* Larger font size for heading */
+    font-family: 'Bubblegum Sans', cursive; /* Bubbly font */
+}
+
+.hero-subtext {
+    color: #ff6600; /* Orange color */
+    font-size: 1.5em; /* Larger font size for paragraph */
+    font-family: 'Bubblegum Sans', cursive; /* Bubbly font */
+}
+
